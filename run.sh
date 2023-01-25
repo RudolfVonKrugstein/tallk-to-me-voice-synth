@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# list all voices
+ALL_VOICES=
+
 for file in $(find text -name lines.txt); do
   VOICE=$(echo $file | sed 's|text/||g' | sed 's|/lines.txt||g')
   NEURAL_PARAMETER=""
@@ -27,4 +30,5 @@ for file in $(find text -name lines.txt); do
     "${PREFIX}_${VOICE}_$(echo $line | sed 's| |_|g' ).mp3"
   done
 done
+
 

@@ -1,0 +1,5 @@
+Update complete
+Restarting now
+Rebooting now
+Shutting down
+Resetting now
